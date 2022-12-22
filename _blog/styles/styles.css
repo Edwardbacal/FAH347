@@ -464,7 +464,7 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   float: left;
-  background-image: url("../assets/diagonal2.png");
+  background-image: url("/assets/diagonal2.png");
 }
 
 .colImg {
