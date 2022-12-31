@@ -96,105 +96,6 @@ a {
 }
 
 
-
-.blue a,
-.video a,
-.covid a {
-  color: #005e67;
-}
-.IGTextBlock a {
-  color: #cfecff;
-}
-
-
-/* sections */
-.lessonBlock {
-  padding: 0 0 4rem 0;
-  border-bottom: .5rem dashed #005e6730;
-  margin-bottom: 4rem;
-  max-width: 1240px;
-}
-
-
-/* HEADER PHOTO/ILLUSTRATIONS */
-.hero1 {
-  width: 100%;
-  margin: 2rem 0 0px 0;
-}
-.hero1 > div {
-  width: 100%;
-  height: 40vmin;
-  max-height: 540px;
-  min-height: 320px;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: cover !important;
-  border-radius: 2px;
-}
-
-
-/* HEADINGS */
-
-/* H1 TITLE BOX */
-.boxHeader {
-  display: flex;
-  margin: 0 0 4rem 0;
-  background-size: 780px;
-  background-image: url(./assets/generic/diagonalLinesThickGreen.png);
-  width: 100%;
-  background-color: #fcfdfd;
-}
-.boxHeader span {
-  border-right: 1px solid #fff;
-}
-.boxHeader span,
-.boxHeader h1 {
-  background: #005E67;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  padding: 18px 1.5rem;
-  margin: 0;
-}
-.boxHeader > div  {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/* H2 TITLE BOX */
-
-.boxHeader2 {
-  border-radius: 1px;
-  padding: 1.5rem 0;
-  margin: 0 0 3rem 0;
-  text-align: center;
-  /* background: #f7fbfb; */
-  background: url(./assets/generic/diagonalFaintG.png);
-  background-size: 400px;
-  box-shadow: 0px 2px 2px #2E48A610 ;
-}
-.boxHeader2 h2 {
-  filter: drop-shadow(0px 1px 4px #fffbfb);
-}
-
-/* labels and citations */
-.instructions {
-  font-size: 1rem !important;
-  margin: 2rem auto 1.5rem auto;
-  font-family: 'Roboto';
-}
-
-.instructions:before {
-  content: "(";
-}
-.instructions:after {
-  content: ")";
-}
-
-.cite {
-  display: inline;
-}
-
 cite,
 figcaption,
 .cite {
@@ -208,18 +109,6 @@ figcaption,
 figcaption {
   text-align: left;
   width: 100%;
-}
-.citeBlock {
-  margin: .5rem 0;
-  display: block;
-}
-.jost em,
-.graph em {
-  font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: .2px;
-  font-style: normal;
-  line-height: 1.5;
 }
 
 p strong {
@@ -270,7 +159,6 @@ ol li h3 span,
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-left: 1px; */
 }
 ol li h3 {
   display: flex;
@@ -297,31 +185,7 @@ ol li h3 {
   transition: .1s linear;
 }
 
-.multList {
-  margin: 1rem;
-  padding: 0;
-}
-.multList {
-  margin: 2rem 0 0 0;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-  gap: 2rem 1rem !important;
-  text-align: center;
-}
-.multList2 {
-  width: 100%;
-}
-/* .numberList li, */
-/* .iconList3 li,
-.iconList4 li, */
-.iconList li,
-.iconGrid li,
-.iconGridCols li,
-.multList li,
-.multList2 li {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
+
 .gridDub {
   grid-column: span 2;
 }
@@ -337,43 +201,6 @@ ol li h3 {
 }
 .igBox img {
   width: 100%;
-}
-.flowChart .igBox {
-  border: 2px solid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.thinLightGreen {
-  background-image: url(https://moodlemedia.camhx.ca/Moodle6/assets/generic/diagonalLinesThinLightGreen.png); background-size: 594px; align-self: stretch;
-  width: 100%;
-}
-.IGlink {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-.IGlink img {
-  width: 14px;
-  height: 1rem;
-  margin-right: .75rem;
-}
-.IGTextBlock {
-  background: #005E67;
-  color: #fff !important;
-  padding: 3rem;
-  z-index: 10;
-  box-shadow: 1px 1px 4px #30303005;
-  line-height: inherit;
-}
-
-
-.IGTextBlock h5,
-.IGTextBlock h4,
-.IGTextBlock h3,
-.IGTextBlock h2 {
-  color: #fff
 }
 
 /*  GRID! GRID! GRID! */
@@ -423,11 +250,6 @@ ol li h3 {
   justify-content: flex-start;
   padding: 1rem 2rem;
   margin: 0;
-  border-top: 0;
-  border-left: 0;
-  box-shadow: -1px 2px 2px #72ADD110 ;
-  background: url('./assets/generic/diagonalFaintSky.png');
-  background-size: 500px;
 }
 
 .iconGrid p,
@@ -435,41 +257,6 @@ ol li h3 {
   filter: drop-shadow(0px 1px 4px #fffbfb);
 }
 
-.spectrum {
-  gap: 8px; 
-  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr))
-}
-.spectrum > ul {
-  height: 100%; 
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-size: contain !important;
-  background-position: right !important;
-}
-.spectrum > ul > li {
-  border: none; 
-  height: calc(100% - 80px);
-  background: #fff;
-  padding: 24px;
-  margin: 40px;
-  border-radius: 4px;
-  position: relative;
-  width: auto;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.spectrum h4 {
-  width: 128px;
-  margin: 0;
-}
-.spectrum .list {
-  margin: 0; 
-  width: calc(100% - 128px - 32px);
-  min-width: 240px;
-}
 
 .note .iconGrid li,
 .note .iconGridCols li,
@@ -480,34 +267,7 @@ ol li h3 {
   background-size: 500px;
 }
 
-.video .iconGrid li,
-.video .iconGridCols li {
-  box-shadow: -1px 2px 2px #2E48A610 ;
-}
 
-.iconList img,
-.iconGrid img,
-.iconGridCols img {
-  height: 3.5rem;
-  min-width: 3.5rem;
-  max-width: 3.5rem;
-  margin: 0 1.5rem 0 0;
-}
-
-.boxTop {
-  position: relative;
-  margin: 4rem 0 0 0 !important;
-}
-.boxTop img:first-child {
-  position: absolute;
-  bottom: .4rem;
-  width: 6rem;
-  left: calc(50% - 3rem);
-}
-
-.columnAB li {
-  margin-bottom: 1rem;
-}
 
 /* placed here for cascade reasons */
 li {
@@ -527,17 +287,13 @@ li {
 
 .flex,
 .flexCol,
-.img,
-.knowledgeCheck,
-.graph {
+.img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.flexCol,
-.knowledgeCheck,
-.graph {
+.flexCol {
   flex-direction: column;
 }
 .TF p {
@@ -551,50 +307,6 @@ li {
   border: none;
 }
 
-.flexColA,
-.flexColB {
-  width: 48%;
-  border: 2px solid #971583;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 6rem;
-}
-.flexColA {
-  margin: 0 2% 2rem 0;
-  color: #971583;
-  border-color: #971583;
-}
-.flexColB { 
-  margin: 0 0 2rem 2%;
-  color: #2E48A6;
-  cursor: pointer;
-  border-color: #2E48A6;
-}
-.flexColA span {
-  background: #971583;
-  right: 0;
-}
-.flexColB span {
-  background: #2E48A6;
-  left: 0;
-  display: none;
-}
-.flexColA span,
-.flexColB span {
-  height: 100%;
-  position: absolute;
-  top: 0; 
-  z-index: 20;
-}
-.flexColA p {
-  padding-right: 50%;
-}
-.flexColB p {
-  padding-left: 50%;
-  display: none;
-}
 
 /* CONTENT HIGHLIGHT BOXES */
 .iNote,
@@ -680,10 +392,6 @@ li {
   margin-right: 1.5rem;
 }
 
-.video {
-  background: #f4f8ff;
-  padding: 2rem 3.5rem;
-}
 
 .blue h2,
 .blue h3,
@@ -705,21 +413,13 @@ li {
   color: #971583;
 }
 
-.resources {
-  padding: .75rem 0 0 2rem;
-  margin: 0;
-  width: calc(100% - 2rem); 
-  background: transparent;
-  color: #303030;
-}
-
 /* Paragraph blocks */
 blockquote {
   margin: 3rem 0 4rem 0;
   display: flex;
 }
 blockquote > span {
-  background-image: url(https://moodlemedia.camhx.ca/Moodle6/assets/generic/diagonalLinesThinLightGreen.png); 
+  background-image: url('./assets/diagonal2.png'); 
   background-size: 500px;
   width: 2rem;
   align-self: stretch;
@@ -1157,6 +857,40 @@ section {
   padding: 0;
 }
 
+.img div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hoverCap {
+  position: absolute !important;
+  height: 100%;
+  padding: 2rem;
+  background: #ffffffe5;
+  transition: .1s;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.hoverCap:hover,
+.hoverCap:focus {
+  opacity: 1;
+}
+
+
+
+.hoverCap p {
+  height: auto;
+  color: #303030;
+  padding: 0 !important;
+  color: #303030;
+  background: transparent !important;
+  filter: none !important;
+}
+
 .row {
   display: flex;
   overflow: scroll;
@@ -1276,17 +1010,20 @@ li img {
 }
 
 
+
 .down {
-  bottom: 2rem;
-  right: 2rem;
-  position: absolute;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99;
 }
 
+
 .down2 {
-  display: block;
-  margin: 1rem;
-  width: 100%;
-  text-align: center;
+  /* display: block; */
+  /* margin: 1rem; */
+  /* width: 100%; */
+  /* text-align: center; */
 }
 
 .down i,
@@ -1294,10 +1031,11 @@ li img {
 .up i {
   font-size: 24px;
   color: #fff;
-  background-color: #303030;
+  background-color: #30303083;
   border-radius: 100%;  
   mix-blend-mode: overlay;
   padding: 1px;
+  opacity: .7;
 }
 .up {
   top: 1rem;
@@ -1535,6 +1273,9 @@ button {
   }
   nav {
     padding: 0 calc(8% - 2rem);
+  }
+  .hide {
+    display: none;
   }
 }
 

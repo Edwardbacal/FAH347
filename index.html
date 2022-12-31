@@ -17,20 +17,20 @@
 <body>
   
   <!-- HERO -->
-  <header class="flex" style="background: url(./assets/Balla_abstract-speed-the-car-has-passed.jpeg);">
+  <header class="flex" style="background: url(./assets/Balla_abstract-speed-the-car-has-passed.jpeg);" id="top">
     <nav class="flex">
       <button>
-        <a href="#details" tabindex="1">
+        <a href="#details" tabindex="1" class="hide">
           Details
         </a>
       </button>
       <button>
-        <a href="#assignments" tabindex="1">
+        <a href="#assignments" tabindex="1" class="hide">
           Assignments
         </a>
       </button>
       <button>
-        <a href="#schedule" tabindex="1">
+        <a href="#schedule" tabindex="1" class="hide">
           Schedule
         </a>
       </button>
@@ -303,7 +303,7 @@
       </p>
       <div class="pad" style="padding: 0; margin: 2px 0 2rem 0;"> 
         <div class="flex" style="justify-content: flex-start;">
-          <button class="pad padB" id="jour" style="width: calc(50% - 2rem); text-align: left; position: relative; box-shadow: none; min-width: 320px;">
+          <button class="pad padB" id="jour" style="width: calc(50% - 3rem); text-align: left; position: relative; box-shadow: none; min-width: 320px;">
             <h2>
               Scholarly Journal 
             </h2>
@@ -311,8 +311,8 @@
               +
             </h2>
           </button>
-          <h3 class="circle" style="width: 2rem; margin: 0 1rem; box-shadow: none;">OR</h3>
-          <button class="pad padB" id="ess" style="width: calc(50% - 2rem); text-align: left; position: relative; box-shadow: none; min-width: 320px;">
+          <h3 class="circle" style="width: 3rem; height: 3rem; margin: 0 1rem; box-shadow: none;">OR</h3>
+          <button class="pad padB" id="ess" style="width: calc(50% - 3rem); text-align: left; position: relative; box-shadow: none; min-width: 320px;">
             <h2>
               Research Essay 
             </h2>
@@ -674,21 +674,22 @@
   <!-- SCHEDULE -->
   <section id="schedule">
     
-    
-    
     <h1>
       Schedule
     </h1>
-    <cite>
-      Click on class titles to view that week's slides
-    </cite>
+    <p>
+      Last updated Dec 31 — the following will change before the 10th!
+    </p>
+    <!-- <cite>
+      Click on class titles to view that week's content (added before each class)
+    </cite> -->
     
     <ol>
       <li>
         <h3>
           <span>1</span>January 10
         </h3>
-        <a href="01.html">
+        <a href="#">
           <h4>
             Intro: What is Cubism? What are its related movements?? Why do they matter???
           </h4>
@@ -938,7 +939,7 @@
             </div>
           </li>
         </ol>
-        <a href="#" class="down" style="mix-blend-mode: difference;"><i class="fa-solid fa-circle-up"></i></a>
+        <a href="#" class="down2" style="bottom: 2rem; right: 2rem; top: inherit; position: absolute;"><i class="fa-solid fa-circle-up" style="background-color: #303030; opacity: 1;"></i></a>
       </section>
       
       
@@ -946,6 +947,8 @@
         Close
       </button>
       
+      
+
       <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
       <script src="index.js"></script>
     </body>
