@@ -26,21 +26,21 @@ const menu = `
     </h2>
     <ol class="grid2">
     <li class="padB">
-    <a href="index.html#details">
+    <a class="closer" href="index.html#details">
     <h4>
     Details
     </h4>
     </a>
     </li>
     <li class="padB">
-    <a href="index.html#assignments">
+    <a class="closer" href="index.html#assignments">
     <h4>
     Assignments
     </h4>
     </a>
     </li>
     <li class="padB">
-    <a href="index.html#schedule">
+    <a class="closer" href="index.html#schedule">
     <h4>
     Schedule
     </h4>
@@ -104,6 +104,11 @@ $('#menu').on("click", function(e) {
 $('#closeMenu').on("click", function() {
   $('#siteMenu').css("right", "-150vw")
   $(this).fadeOut();
+});
+
+$('body').on("click", "a.closer", function() {
+  $('#siteMenu').css("right", "-150vw")
+  $('#closeMenu').fadeOut();
 });
 
 
