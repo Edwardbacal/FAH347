@@ -616,24 +616,7 @@ blockquote > div,
   height: 2rem;
 }
 
-.transcriptButton:hover,
-.transcriptButton:focus,
-.CTA:hover,
-.CTA:focus,
-.flowButton:hover,
-.flowButton:focus,
-.TFbutton:hover,
-.TFbutton:focus {
-  border: 2px solid #F1B434;
-  color: #fff;
-  background: #F1B434;
-}
-.flowButton {
-  font-size: 1.2rem;
-}
-.TFbutton {
-  position: absolute;
-}
+
 
 .iNote .CTA:hover,
 .iNote .CTA:focus {
@@ -915,7 +898,7 @@ padding: 0 1rem;
 .row li img {
   width: auto;
   max-height: 75vh;
-  max-width: 100vh;
+  max-width: 75vw;
 }
 
 .row p {
@@ -979,7 +962,6 @@ padding: 0 1rem;
   margin: 0 1rem;
 }
 
-.img img,
 .pad {
   box-shadow: 0px 0px 3px #3030300a;
 }
@@ -1120,6 +1102,13 @@ ol li > a:focus {
   background: #303030;
   color: #fff;
   transition: .2s ease-out;
+}
+
+a[href="#"]:hover,
+a[href="#"]:focus {
+  background: inherit;
+  color: inherit;
+  cursor: default;
 }
 
 .gridGrid {
@@ -1279,6 +1268,25 @@ button {
   }
 }
 
+@media (max-width: 475px) {
+
+  ol li > a {
+    width: 100%;
+    padding: .7rem;
+    margin: .7rem -.7rem 0 -.7rem;
+  }
+  .readings {
+    margin: 0;
+  }
+  section,
+  header{
+    padding: 5%;
+  }
+  nav {
+    padding: 0 calc(5% - 2rem);
+  }
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 14px;
@@ -1306,28 +1314,15 @@ button {
   h1 {
     font-size: 2.5rem;
   }
+  #jour,
+  #ess {
+    width: 100% !important;
+  }
   
 }
 
 
-@media (max-width: 475px) {
 
-  ol li > a {
-    width: 100%;
-    padding: .7rem;
-    margin: .7rem -.7rem 0 -.7rem;
-  }
-  .readings {
-    margin: 0;
-  }
-  section,
-  header{
-    padding: 5%;
-  }
-  nav {
-    padding: 0 calc(5% - 2rem);
-  }
-}
 
 @media (max-width: 350px) {
   ol li h4 {

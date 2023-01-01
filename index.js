@@ -26,6 +26,13 @@ const menu = `
     </h2>
     <ol class="grid2">
     <li class="padB">
+    <a class="closer" href="index.html">
+    <h4>
+    Home
+    </h4>
+    </a>
+    </li>
+    <li class="padB">
     <a class="closer" href="index.html#details">
     <h4>
     Details
@@ -55,40 +62,40 @@ const menu = `
     <li><a href="01.html">
     1
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     2
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     3
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     4
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     5
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     6
     </a></li>
     <li>
 
     </li>
-    <li><a href="">
+    <li><a href="#">
     7
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     8
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     9
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     10
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     11
     </a></li>
-    <li><a href="">
+    <li><a href="#">
     12
     </a></li>
     </ol>
