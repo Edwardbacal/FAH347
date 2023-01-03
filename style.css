@@ -28,8 +28,8 @@ h6,
 button {
   font-family: 'barlow', 'helvetica', 'sans-serif';
   font-weight: 700;
-  
   line-height: 1.5;
+  color: inherit;
 }
 
 p,
@@ -832,12 +832,17 @@ section {
   margin: 1rem auto;
 }
 
-.img img {
+.img img{
   height: auto;
   max-height: 75vh;
   max-width: 100%;
   margin: 0;
   padding: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 75vh
 }
 
 .img div {
@@ -1001,13 +1006,6 @@ li img {
 }
 
 
-.down2 {
-  /* display: block; */
-  /* margin: 1rem; */
-  /* width: 100%; */
-  /* text-align: center; */
-}
-
 .down i,
 .down2 i,
 .up i {
@@ -1160,6 +1158,7 @@ header {
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 
