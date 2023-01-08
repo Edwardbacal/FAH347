@@ -77,9 +77,6 @@ const menu = `
     <li><a href="#">
     6
     </a></li>
-    <li>
-
-    </li>
     <li><a href="#">
     7
     </a></li>

@@ -223,6 +223,7 @@ ol li h3 {
 .iconGrid {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1rem;
+  margin: 6rem auto;
 }
 .iconGridCols {
   gap: 1rem;
@@ -246,10 +247,12 @@ ol li h3 {
 
 .iconGrid li,
 .iconGridCols li {
-  flex-direction: row;
+  display: flex;
+  align-items: center;
   justify-content: flex-start;
   padding: 1rem 2rem;
   margin: 0;
+  border: 1px solid #797979;
 }
 
 .iconGrid p,
@@ -1179,6 +1182,10 @@ header {
   padding: 5vw;
   height: auto;
   margin: auto;
+}
+
+.padd p {
+  padding: 0 !important;
 }
 
 .padB .instructions {
