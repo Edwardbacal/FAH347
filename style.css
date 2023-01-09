@@ -1276,10 +1276,11 @@ button {
 
 @media (max-width: 475px) {
 
-  ol li > a {
-    width: 100%;
+  ol li > a,
+  #botar {
+    width: 100% !important;
     padding: .7rem;
-    margin: .7rem -.7rem 0 -.7rem;
+    margin: .7rem -.7rem 0 -.7rem !important;
   }
   .readings {
     margin: 0;
