@@ -13,8 +13,40 @@ $('#jour').on("click", function() {
   $("#journal").slideToggle();
 });
 
+$('#menu').on("click", function(e) {
+  e.preventDefault();
+  $('#siteMenu').css("right", "0")
+  $('#closeMenu').fadeIn();
+});
+
+$('#closeMenu').on("click", function() {
+  $('#siteMenu').css("right", "-150vw")
+  $(this).fadeOut();
+});
+
+$('body').on("click", "a.closer", function() {
+  $('#siteMenu').css("right", "-150vw")
+  $('#closeMenu').fadeOut();
+});
 
 
+$(document ).ready(function() {
+  $("body").append(menu);
+});
+
+
+$(".down").click(function() {
+  $('html, body').animate({
+      scrollTop: $(this).offset().top + 780
+  }, 400);
+});
+
+$(".row li i").click(function() {
+  console.log('roight');
+  $(this).parents("ul").animate({
+      scrollLeft: "+=1000px"
+  }, 400);
+});
 
 
 const menu = `
@@ -98,31 +130,34 @@ const menu = `
     </ol>
   </header>
 `
+// flipcards
 
-$('#menu').on("click", function(e) {
-  e.preventDefault();
-  $('#siteMenu').css("right", "0")
-  $('#closeMenu').fadeIn();
+$('.flipCard').on("click", function() {
+  $(this).children('.flip').css("transform", "rotateY(90deg)");
+  $(this).children('.unFlip').css("transform", "rotateY(0deg)");
 });
 
-$('#closeMenu').on("click", function() {
-  $('#siteMenu').css("right", "-150vw")
+$('.TFbutton').on("click", function() {
   $(this).fadeOut();
-});
-
-$('body').on("click", "a.closer", function() {
-  $('#siteMenu').css("right", "-150vw")
-  $('#closeMenu').fadeOut();
+  $(this).next(".displayNone").slideToggle();
 });
 
 
-$(document ).ready(function() {
-  $("body").append(menu);
+
+// definition boxes
+
+$('.flowButton').on("click", function() {
+  const factor = $(this).attr("id");
+  $(this).parent().next(".mapBox").empty();
+  for (let name in tabDescription) {
+    if  (factor === name) {
+      $(this).parent().next(".mapBox").append((tabDescription[name]));
+      $(this).parent().next(".mapBox").slideDown(400);
+    }
+  }
 });
 
-
-$(".down").click(function() {
-  $('html, body').animate({
-      scrollTop: $(this).offset().top + 780
-  }, 400);
+$('.defs > i').on("click", function() {
+  console.log('x');
+  $(this).prev(".mapBox").slideUp(200);
 });

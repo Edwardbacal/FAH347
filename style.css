@@ -10,6 +10,17 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 button {background: transparent; border: none; outline: none }
 
+section,
+header > div,
+.inv > div {
+  max-width: 1440px;
+  margin: auto;
+}
+
+
+.inv {
+  max-width: none;
+}
 
 html {
   font-family: 'barlow', 'helvetica', 'arial';
@@ -219,6 +230,7 @@ ol li h3 {
 .iconGridCols {
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
   gap: 2.5rem;
+  margin: 2.5rem auto;
 }
 .iconGrid {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -577,8 +589,8 @@ blockquote > div,
 .TFbutton,
 .CTA,
 .flowButton {
-  color: #2E48A6;
-  border: 2px solid #F1B434;
+  color: #303030;
+  border: 1px solid #303030;
   border-radius: 1px;
   padding: 1rem 1.5rem;
   margin: 2rem 0;
@@ -592,6 +604,14 @@ blockquote > div,
   text-decoration: none;
   font-weight: 600;
   line-height: 1.5;
+  background: #fff;
+}
+.CTA:hover,
+.CTA:focus,
+.flowButton:hover,
+.flowButton:focus {
+  color: #fff;
+  background: #303030;
 }
 .toc button {
   width: 100%;
@@ -664,13 +684,15 @@ blockquote > div,
 .displayNone,
 .mapBox {
   display: none;
+  transition: 0;
+  margin-top: 2.5rem !important;
 }
 
 .flip {
   font-size: 2rem;
-  background: url(https://moodlemedia.camhx.ca/Moodle6/assets/generic/diagonalLinesThinLightBlue.png);
+  background: url(./assets/diagonal.png);
   background-size: 300px;
-  color: #2E48A6;
+  color: #303030;
 }
 .flip,
 .unFlip {
@@ -688,7 +710,7 @@ blockquote > div,
   width: 4rem;
   height: 4rem;
   border-radius: 100%;
-  border: 2px solid #2E48A6;
+  border: 2px solid #303030;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1023,9 +1045,36 @@ li img {
 .up {
   top: 1rem;
   padding: 0 0 4px 0;
-
 }
 
+.defs {
+  background: url(./assets/diagonal.png);
+  background-size: 300px;
+  padding: 5%;
+  margin: 8rem auto;
+  position: relative;
+  transition: none;
+}
+
+.defs > i {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  background: #fff;
+  color: #a3a3a3;
+}
+
+.defs .gridCols {
+  margin-bottom: 0;
+}
+
+
+
+.defs .pad {
+  transition: none !important;
+}
 
 
 /* SYLLABUS */
@@ -1346,4 +1395,12 @@ button {
     padding: 0;
   }
 
+}
+
+@media (min-width: 1440px) {
+  section {
+
+padding-left: 0;
+padding-right: 0;
+  }
 }
