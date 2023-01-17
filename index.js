@@ -90,11 +90,11 @@ const menu = `
     <h3>
     Jump to class
     </h3>
-    <ol class="gridGrid">
+    <ol class="gridGrid" style="margin-bottom: 4rem">
     <li><a href="01.html">
     1
     </a></li>
-    <li><a href="#">
+    <li><a href="02.html">
     2
     </a></li>
     <li><a href="#">

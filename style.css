@@ -226,6 +226,15 @@ ol li h3 {
   place-items: center;
   width: 100%;
 }
+.pads li {
+  padding: 2rem;
+}
+.pads p {
+  margin: 0;
+}
+.pads h4 {
+  margin: 0;
+}
 .gridCols,
 .iconGridCols {
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
@@ -262,9 +271,9 @@ ol li h3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 1rem 2rem;
+  justify-content: center;
   margin: 0;
-  border: 1px solid #797979;
+  border: 1.5px dashed #797979;
 }
 
 .iconGrid p,
@@ -685,7 +694,7 @@ blockquote > div,
 .mapBox {
   display: none;
   transition: 0;
-  margin-top: 2.5rem !important;
+  /* margin-top: 2.5rem !important; */
 }
 
 .flip {
@@ -854,7 +863,7 @@ section {
   width: 100%;
   background-image: url("./assets/diagonal2.png");
   background-size: 320px;  
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .img img{
@@ -883,9 +892,12 @@ iframe {
   padding: 2rem;
   background: #ffffffe5;
   transition: .1s;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   opacity: 0;
+  flex-direction: column;
+  top: 0;
+  left: 0;
 }
 
 .hoverCap:hover,
@@ -921,7 +933,8 @@ iframe {
   align-items: flex-start;
   background-color: #fff;
 }
-.row li p {
+.row li p,
+.row li h4 {
 padding: 0 1rem;
 }
 
@@ -975,6 +988,11 @@ padding: 0 1rem;
   background: linear-gradient(180deg, #30303000, rgb(48, 48, 48));
   filter: none;
 }
+
+.inv .row {
+  color: #303030 !important;
+}
+
 
 
 .inv .imgBox p {
@@ -1045,6 +1063,11 @@ li img {
 .up {
   top: 1rem;
   padding: 0 0 4px 0;
+}
+
+.bf i {
+  font-size: 2rem;
+  padding: 1rem 0;
 }
 
 .defs {
@@ -1264,6 +1287,11 @@ button {
 .inv {
   color: #fff;
   background: #303030;
+  border: none !important;
+}
+
+.inv i {
+  color: #fff;
 }
 
 
@@ -1331,6 +1359,9 @@ button {
     padding: .7rem;
     margin: .7rem -.7rem 0 -.7rem !important;
   }
+  .closer {
+    margin: 0 !important;
+  }
   .readings {
     margin: 0;
   }
@@ -1397,7 +1428,7 @@ button {
 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   section {
 
 padding-left: 0;

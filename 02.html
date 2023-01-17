@@ -55,7 +55,7 @@
   </header>
   
   <!-- agenda -->
-  <section class="flex" style="background-image: url('./assets/diagonal.png'); background-size: 40%;">
+  <header class="flex" style="background-image: url('./assets/diagonal.png'); background-size: 40%;">
     <div class="grid">
       <div class="pad">
         <h2>
@@ -63,10 +63,9 @@
         </h2>
         <ul class="list">          
           <li>Re-introduction to the course</li>
-          <li>Impressionism / Post-Impressionism / Fauvism</li>
-          <li>The <em>Bande á Picasso</em></li>
-          <li>"Primitivism"</li>
-          <li>A Movement is Born: Les Demoiselles D'Avignon</li>
+          <li> <a href="#WU">Warm Up: Looking at Looking</a></li>
+          <li><a href="#BC">Pre-Cubism: Impressionism / Post-Impressionism / Fauvism</a></li>
+          <li><a href="#LD">A Movement is Born: Picasso and Les Demoiselles d'Avignon</a></li>
         </ul>
       </div>
       <div class="pad">
@@ -78,10 +77,10 @@
         </p>
       </div>
     </div>
-  </section>
+  </header>
   
   <!-- ways of seeing -->
-  <section class="flex">
+  <section class="flex" id="WU">
     <h3>
       Warm up: looking at looking (at looking)
     </h3>
@@ -126,7 +125,7 @@
       <li class="flex" style="margin: auto 8vw; background: transparent;">
         <i class="fa-solid fa-circle-right" style="font-size: 2rem"></i>
       </li>  
-      <li>
+      <li id="blueNude">
         <img src="./assets/02/Henri Matisse - Blue Nude (Souvenir de Biskra) 1907.jpg" alt="" style="width: 50vw;">
         <p>
           Henri Matisse - Blue Nude (Souvenir de Biskra) - 1907
@@ -146,7 +145,7 @@
     <ul class="iconGrid">
       <li class="inv">
         <h3 style="margin: auto;">
-          Tags:
+          Keywords:
         </h3>
       </li>
       <li>
@@ -183,12 +182,12 @@
   </section>
   
   <!-- Pre-cubism -->
-  <section>
+  <section id="BC">
     <h2>
       Pre-Cubism
     </h2>
     <p>
-      Or: 120 years of French art in under 10 minutes:
+      120 years of French art in under 10 minutes:
     </p>
     <ul class="row">  
       <li>
@@ -202,7 +201,7 @@
         </div>
       </li>     
       <li>
-        <img src="./assets/02/Jacques-Louis David - The Oath of the Horatii - 1784-5.jpg" alt="" style="width: 60vw;">
+        <img src="./assets/02/Jacques-Louis David - The Oath of the Horatii - 1784-5.jpg" alt="" style="max-width: 60vw;">
         <p>
           Jacques-Louis David - The Oath of the Horatii - 1784-5
         </p>
@@ -283,10 +282,28 @@
         </div>
       </li> 
       <li>
-        <img src="./assets/02/Henri Matisse - Le Bonheur de Vivre - 1905-1906.jpg" alt="" style="max-width: 50vw;">
+        <div class="img" style="position: relative">
+          <div>
+            <div class="hoverCap">
+              <p>
+                "Never had flat planes of unmodulated pure color been used on such a scale, with such violent clashes of primary hues; never had contours so thick, also painted in bright hues, danced such free arabesques; never had anatomies been so "deformed," bodies melting together as if made of mercury-except perhaps in Gauguin's prints, which Matisse had revisited during the summer."
+              </p>
+              <cite>
+                Art Since 1900, pg 76
+              </cite>
+            </div>
+            <img src="./assets/02/Henri Matisse - Le Bonheur de Vivre - 1905-1906.jpg" alt="" style="max-width: 50vw;">
+          </div>
+        </div>    
+        <div class="hoverCap">
+        
         <p>
-          Henri Matisse - Le Bonheur de Vivre - 1905-1906
         </p>
+      </div>
+        <p>
+          Henri Matisse - Le Bonheur de Vivre - 1905-1906 <cite> (hover)</cite>
+        </p>
+
       </li>
       <li>
         <img src="./assets/02/Georges Braque - Seascape, Estaque - 1906.jpg" alt="" style="max-width: 50vw;">
@@ -362,12 +379,51 @@
         </p>
       </li>
     </ul>
+
+  
+    <ul class="iconGridCols pads">
+      <li class="inv gridDub">
+        <div>
+        <h4>
+          Key traits borrowed from Post-Impressionism
+        </h4>
+        <cite>
+          Adapted from Art Since 1900, 1906
+        </cite>
+        </div>
+      </li>
+      <li class="igBox">
+        <p>
+          Flat, unmodulated planes of nonmimetic color (from Gauguin and van Gogh)
+        </p>
+      </li>
+      <li class="igBox">
+        <p>
+          Thick contours with a rhythm of their own (from Gauguin and van Gogh)
+        </p>
+      </li>
+      <li class="igBox">
+        <p>
+           Differentiating linear marks by varying their thickness and their closeness to one another (from van Gogh)
+        </p>
+      </li>
+      <li class="igBox">
+        <p>
+          Incorporating non-western stylistic visual styles and themes (from Gauguin)
+        </p>
+      </li>
+      <li class="igBox gridDub">
+        <p>
+          Treating the pictorial surface as a totalizing field where everything, even the unpainted white areas, plays a constructive role in bolstering the energy of the picture (from Cézanne)
+        </p>
+      </li>
+    </ul>
   </section>
   
   <!-- matisse -->
-  <section> 
+  <section class="inv"> 
     
-    <h2 style="padding-top: 8rem">
+    <h2 style="margin: 4rem 0 0 0">
       Henri Matisse
     </h2>
     <p>
@@ -375,17 +431,29 @@
     </p>
     
     <ul class="row">
-      <li >
+      <li style="max-width: 100vw;">
         <img src="./assets/02/matisse.jpg" alt="matisse" style="max-width: 500px;">
-        <p>
-          Photo of Henri Matisse
-        </p>
+          <h4>
+            Matisse, Henri Émile Benoît (1869–1954) 
+          </h4>
       </li>
+      <!-- <li class="pad">
+        <p style="padding: 0;">
+          "Around 1897 he became acquainted with the paintings of the impressionists and from this point colour became the most important element in his pictures. The energy and radical nature of his experiments with colour in such pictures as Portrait of Madame Matisse (1905) and Open Window Collioure (1905) ensured his leadership of the fauves. His aims, however, were different from those of the impressionists and of the short-lived fauve movement: in 1908 he wrote in his Notes d'un peintre, 'I dream of an art of balance, purity and calm, without troubling or depressing themes, that will offer … a soothing influence.' This aim is illustrated in the large figure compositions, increasingly simple in form, of the period 1905–10, including Luxe, calme et volupté (1905), Joie de vivre (1906), and La Danse (1909). During this period Matisse began to spend the summers painting in the south of France. He travelled widely between 1907 and 1914 and developed an admiration for Near East art, which inspired the exotic decorations that feature in many of his paintings."
+        </p>
+        <cite>
+          "Matisse, Henri Émile Benoît." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780192800916.001.0001/acref-9780192800916-e-1092."> Who's Who in the Twentieth Century, edited by Market House Books, Oxford University Press, 1999. </a>
+        </cite>
+      </li> -->
       <li>
         <img src="./assets/02/Henri Matisse - Green Stripe - 1905.webp" alt="matisse">
         <p>
-          Henri Matisse - Green Stripe - 1905
+          Henri Matisse - Green Stripe (Portrait of Madame Matisse) - 1905
         </p>
+      </li>
+      <li class="flex bf" style="margin: auto 2vw; background: transparent;">
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-forward"></i>
       </li>
       <li>
         <img src="./assets/02/Pablo Picasso - Gertrude Stein - 1905–6.jpg" alt="matisse">
@@ -396,11 +464,229 @@
     </ul>
   </section>
   
-  <section class="inv">
+  <section class="flexCol" id="LD">
+    <div>
+    <div class="img">
+      <img src="./assets/02/Picasso-1908.jpg" alt="">
+    </div>
+    <h4>
+      Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso (1881 - 1973)
+    </h4>
+    <ul class="gridCols imgBox" style="margin: 8rem auto">
+      <li>
+        <img src="./assets/02/Pablo Picasso - La Vie - 1903 .jpg" alt="" class="vert">
+        <p>
+          Pablo Picasso - La Vie - 1903
+        </p>
+      </li>
+      <li>
+        <img src="./assets/02/Pablo Picasso - At the Lapin Agile - 1905.jpg" alt="">
+        <p>
+          Pablo Picasso - At the Lapin Agile - 1905
+        </p>
+      </li>   
+    </ul>
+    </div>
+    <h3 style="margin: 20vw auto;">
+      Then...
+    </h3>
+
+
+  </section>
+    <header class="flex" style="background-image: url(./assets/02/Pablo\ Picasso\ -\ Les\ Demoiselles\ dAvignon\ -\ 1907.jpg); background-position-y: -50px; min-height: 110vh;">
+      <div class="pad" style="width: auto; margin-right: auto;">
+        <h2>
+          Les Demoiselles d'Avignon, 1907
+        </h2>
+      </div>
+      <div class="pad">
+        <p>
+          Picasso's <em>Les Demoiselles d'Avignon</em> has acquired a mythical status: it is a manifesto, a battlefield, a herald of modern art. Fully conscious that he was producing a major work, Picasso threw everything into its elaboration: all his ideas, all his energy, all his knowledge.
+        </p>
+        <cite>
+          Art Since 1900, 78
+        </cite>
+      </div>
+
+      <div class="pad" style="width: auto;">
+        <p>
+          y tho'?
+        </p>
+      </div>
+    </header>
+    <section class="flexCol">
+
+      <div class="img" style="margin: 2rem auto 8rem auto;">
+        <img src="./assets/02/Pablo Picasso - Les Demoiselles dAvignon - 1907.jpg" alt="" style="max-height: 90vh;">
+      </div>
+
     
+        <h3 style="margin: 8rem 0 0 0">
+          Some more conventional precursors
+        </h3>
+      <ul class="gridCols imgBox">
+        <li>
+          <img src="./assets/02/Pablo Picasso - The Harem - 1906 .jpg" alt="" class="vert">
+          <p>
+            Pablo Picasso - The Harem - 1906
+          </p>
+        </li>
+        <li>
+        <img src="./assets/02/Jean Auguste Dominique Ingres - The Turkish Bath - 1852-9.png" alt="">
+          <p>
+            Jean Auguste Dominique Ingres - The Turkish Bath - 1852-9
+          </p>  
+        </li>
+      </ul>
+
+      <div class="igBox" style="padding: 5%; margin: 4rem 0;">
+        <p style="margin: 0 0 1rem 0;">
+          Bordello pictures are part of a long tradition within the genre of erotic art (a tradition that Picasso knew well...). These soft-porn scenes are meant to gratify the voyeurism of male, heterosexual, art lovers. Picasso overthrows this tradition: interrupting the story, the gaze of his demoiselles challenges the (male) spectator by signifying to him that his comfortable position, outside the narrative scene, is not as secure as he might think.
+        </p>
+        <cite>
+          Art Since 1900
+        </cite>
+
+        <img src="./assets/02/Durer.jpeg" alt="" style="margin-top: 4rem">
+        <p>
+          Remember this guy?
+        </p>
+
+        <p style="margin-top: 4rem;">
+          Les Demoiselles is above all a work about beholding, about the trauma engendered by a visual summons.
+        </p>
+      </div>
+
+      <h4>
+        And what about those gazing faces?
+      </h4>
+      <ul class="grid">
+        <li>
+          <img src="./assets/02/LD1.jpg" alt="">
+        </li>
+        <li>
+          <img src="./assets/02/LD2.jpeg" alt="">
+        </li>
+        <li>
+          <img src="./assets/02/LD3.jpeg" alt="">
+        </li>
+      </ul>
+
+      <h5>
+        The Iberian faces 
+      </h5>
+      <p>
+        As in, modelled after the traditional art of Iberia (the peninsula containing Spain and Portugal)
+      </p>
+
+      <ul class="gridCols imgBox" style="margin: 4rem auto">
+        <li>
+          <img src="./assets/02/Iberian female head - ca 300 - 100 BCE.jpg" alt="">
+          <p>
+            Iberian female head - ca 300 - 100 BCE
+          </p>
+        </li>
+        <li>
+        <img src="./assets/02/Pablo Picasso - Gertrude Stein detail.jpg" alt="">
+          <p>
+            Pablo Picasso - Gertrude Stein (detail) - 1905–6
+          </p>  
+        </li>
+      </ul>
+
+      <h5>
+        And the African Mask faces
+      </h5>
+
+      <ul class="gridCols">
+        <li>
+          <img src="./assets/02/LD4.jpeg" alt="">
+        </li>
+        <li>
+          <img src="./assets/02/LD5.jpeg" alt="">
+        </li>
+      </ul>
+
+      <p>
+        Which brings us to
+      </p>
+      <div class="igBox">
+        <h2>
+          "Primitivism"
+        </h2>
+        <cite>
+          emphasis on the quotation marks
+        </cite>
+        <p>
+          The approbation of and enthusiasm for primitive art, generally understood to mean the art of Africa and the Pacific Islands. Western artists had a particular interest in this type of ethnic art c.1905–c.1935, beginning with the Fauves, Cubists, and Die Brücke who incorporated elements of it into their own work. This in turn led to a deeper study of this subject by both anthropologists and art historians.
+        </p>
+        <cite>
+          Clarke, Michael. "primitivism." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780199569922.001.0001/acref-9780199569922-e-1382."> The Concise Oxford Dictionary of Art Terms. : Oxford University Press, 2010.</a>  
+        </cite>
+        <p>
+          It was during the first decades of the 20th century that modernist painting, sculpture and printmaking were most responsive to the arts of Africa and the Pacific. Maurice de Vlaminck's acquisition of some African sculptures c.1905 was followed by Picasso's visit to the Musée d'Ethnographie du Trocadéro in Paris in 1907 and his subsequent assimilation of African and Pacific forms in the painting Les Demoiselles d'Avignon (1907; New York, MOMA). Members of Die Brücke, such as Emil Nolde, Ernst Ludwig Kirchner, Max Pechstein and Karl Schmidt-Rottluff, drew inspiration from art seen in ethnographic museums or, in Nolde's and Pechstein's case, on journeys to the Pacific Islands, and translated their responses into paintings, woodcuts and wood-carvings of rare starkness and vehemence. Surrealist artists were attracted to a variety of American, African and Pacific objects: Max Ernst drew inspiration from Easter Island petroglyphs, Joan Miró from masks of Arctic peoples, and Alberto Giacometti from various Polynesian sources. In the history of modernist sculpture, the achievements of Constantin Brancusi, Amedeo Modigliani, Jacob Epstein and Henry Moore, among others, may confidently be linked to non-Western antecedents, predominantly African.
+        </p>
+        <p>
+          While modernist ideals in the early 20th century were shaped, on the one hand, by principles of simplification, reduction to essence and organic gracefulness and, on the other, by a more agitated desire to accelerate artistic progress through an espousal of the outlandish and extravagant, it may be said that its standards of formal evolution were set by the arts of peoples labeled “primitive” or “barbaric.” Artists as diverse as Matisse and Schmidt-Rottluff found this example highly persuasive, and few avant-garde artists worked without at least one talismanic sample of what was taken to be the African or Pacific vision in the studio. Only the Futurists, for reasons of ideology, resisted the allure of African and Pacific culture.
+        </p>
+        <cite>
+          Cardinal, Roger. "Primitivism." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780195335798.001.0001/acref-9780195335798-e-1670."> The Grove Encyclopedia of American Art: Oxford University Press, 2011.</a>
+        </cite>
+      </div>
+
+      <ul class="gridCols imgBox" style="margin: 8rem auto">
+        <li>
+          <img src="./assets/02/Trocadero.jpg" alt="">
+          <p>
+            Trocadero Museum of Ethnography, Paris
+          </p>
+        </li>
+        <li>
+        <img src="./assets/02/picasso-braque-studios.jpg" alt="">
+          <p>
+            Picasso and Braque in their artefact adorned studios
+          </p>  
+        </li>
+        <li>
+        <img src="./assets/02/Fang mask.jpg" alt="" class="vert" style="max-height: 50vh;">
+          <p>
+            Fang mask
+          </p>  
+        </li>
+        <li>
+        <img src="./assets/02/mbangu.gif" alt="" class="vert" style="max-height: 50vh;">
+          <p>
+            Mbangu mask. Central Pende. Bandundu, Zaïre.
+          </p>  
+        </li>
+      </ul>
+      <div class="img">
+        <img src="./assets/02/masks.jpg" alt="">
+        <p>
+          Detail of Les Demoiselles and a mask from the Congo
+        </p>
+      </div>
+    </section>
+
+    <section>
+    <div class="igBox" style="margin-top: 6rem;">
+      <h4>
+        What's the <em>effect</em> of this painting?
+      </h4>
+      <p>
+        The painting is unsettling - in its subject matter and its appearance, in its origins and its achievement. There is no doubt that the work marked a turning-point in Picasso's development, and that it provoked an extreme reaction in Braque, bringing the two artists into creative dialogue. On the other hand, almost nothing of the subject, scale, colour, form or mood of this painting - nothing of its ambition - survives into Picasso's Cubism proper. Les Demoiselles d'Avignon is not so much the first Cubist painting, then, as the traumatic rupture that enables Cubism to begin.
+      </p>
+      <cite>
+        Neil Cox - Cubism
+      </cite>
+    </div>
     
+
+
+  </section>
   </section>
   
+
   
   
   
@@ -428,7 +714,7 @@
         Impressionism
       </h4>
       <p>
-        A movement in French painting, associated particularly with Monet, Pissarro, Sisley, Degas, and Renoir, characterized by the use of a bright palette, broken brushwork, and an emphasis on depictions of contemporary life and landscape. The term was originally coined as a form of satire by the critic Louis Leroy reviewing the first exhibition of the Société Anonyme des artistes, peintres, sculpteurs, graveurs…which opened on 15 April 1874, at the Parisian studio of the photographer Nadar on the boulevard des Capucines, and is nowadays referred to as the first Impressionist exhibition. Monet's painting Impression: Sunrise 1873 (Musée Marmottan, Paris) was singled out for particular attack, Leroy maintaining that the term ‘impression’ was too personal and should not have been used in a picture title (effet, i.e. an effect of nature, would have been preferable). In fact, ‘impression’ had a complex duality in 19th-century artistic theory, implying on the one hand the reception by the artist of the scene presented to him, on the other the subjective trace of the artist's own nature or temperament in the resulting work of art. The term ‘Impressionist’ rapidly went into widespread usage as a result of the 1874 exhibition and a further seven shows were staged, the last in 1886. There were a number of important contributory factors to the evolution of Impressionism: a growing interest in colour theory and the laws of complementary contrasts; an increasing liking, among landscape painters, for working en plein air; and a growing dissatisfaction with the official Salon exhibitions where many of the young Impressionists experienced frequent rejection. By the time of the final 1886 Impressionist exhibition, many of the participants had begun to experience considerable success, lauded by avant-garde critics and increasingly patronized by enlightened collectors. It was in the 1890s, however, that Impressionism really began to find its international market, especially in America (Britain by contrast was curiously slow to appreciate its merits). Paradoxically, it was also around this time that Impressionism began to be perceived, in certain right-wing religious circles in France, as the art of materialism, concerned only with the everyday. As a style it had become widespread, attracting a plethora of minor and repetitive adherents. Nevertheless, in the course of the 20th century Impressionism can fairly claim to have become the most widely popular of all movements with art lovers and collectors.
+        A movement in French painting, associated particularly with Monet, Pissarro, Sisley, Degas, and Renoir, characterized by the use of a bright palette, broken brushwork, and an emphasis on depictions of contemporary life and landscape. The term was originally coined as a form of satire by the critic Louis Leroy reviewing the first exhibition of the Société Anonyme des artistes, peintres, sculpteurs, graveurs…which opened on 15 April 1874, at the Parisian studio of the photographer Nadar on the boulevard des Capucines, and is nowadays referred to as the first Impressionist exhibition. Monet's painting Impression: Sunrise 1873 (Musée Marmottan, Paris) was singled out for particular attack, Leroy maintaining that the term 'impression' was too personal and should not have been used in a picture title (effet, i.e. an effect of nature, would have been preferable). In fact, 'impression' had a complex duality in 19th-century artistic theory, implying on the one hand the reception by the artist of the scene presented to him, on the other the subjective trace of the artist's own nature or temperament in the resulting work of art. The term 'Impressionist' rapidly went into widespread usage as a result of the 1874 exhibition and a further seven shows were staged, the last in 1886. There were a number of important contributory factors to the evolution of Impressionism: a growing interest in colour theory and the laws of complementary contrasts; an increasing liking, among landscape painters, for working en plein air; and a growing dissatisfaction with the official Salon exhibitions where many of the young Impressionists experienced frequent rejection. By the time of the final 1886 Impressionist exhibition, many of the participants had begun to experience considerable success, lauded by avant-garde critics and increasingly patronized by enlightened collectors. It was in the 1890s, however, that Impressionism really began to find its international market, especially in America (Britain by contrast was curiously slow to appreciate its merits). Paradoxically, it was also around this time that Impressionism began to be perceived, in certain right-wing religious circles in France, as the art of materialism, concerned only with the everyday. As a style it had become widespread, attracting a plethora of minor and repetitive adherents. Nevertheless, in the course of the 20th century Impressionism can fairly claim to have become the most widely popular of all movements with art lovers and collectors.
       </p>
       `,
       "post-impressionism" : `
