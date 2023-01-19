@@ -694,7 +694,10 @@ blockquote > div,
 .mapBox {
   display: none;
   transition: 0;
-  /* margin-top: 2.5rem !important; */
+}
+
+.mapBox {
+  margin-top: 2.5rem !important;
 }
 
 .flip {
@@ -1177,6 +1180,10 @@ ol li > a:focus {
   transition: .2s ease-out;
 }
 
+a[href="#"] {
+  pointer-events: none;
+}
+
 a[href="#"]:hover,
 a[href="#"]:focus {
   background: inherit;
@@ -1342,6 +1349,7 @@ button {
   section,
   header{
     padding: 6% 8%;
+    background-size: 100%;
   }
   nav {
     padding: 0 calc(8% - 2rem);
