@@ -917,6 +917,7 @@ iframe {
   top: 0;
   left: 0;
   overflow: scroll;
+  z-index: 2;
 }
 
 .hoverCap:hover,
@@ -947,6 +948,7 @@ iframe {
   background: transparent !important;
   filter: none !important;
 }
+
 
 .row {
   display: flex;
