@@ -97,7 +97,7 @@ const menu = `
     <li><a href="02.html">
     2
     </a></li>
-    <li><a href="#">
+    <li><a href="03.html">
     3
     </a></li>
     <li><a href="#">
