@@ -35,7 +35,7 @@
       <li style="height: 100%">
         <div class="pad flex">
           <h1>
-            Cubism and Related Movements III
+            Cubism and Related Movements IV
           </h1>
         </div>
       </li>
@@ -83,7 +83,16 @@
  
   
   
- 
+  <section>
+      
+    <div class="img">
+      <img src="./assets/03/Georges Braque - Homage to JS Bach - 1911-2.jpeg">
+      <p>
+        Georges Braque - Homage to J.S. Bach - 1911-2
+      </p>
+    </div>
+  </section>
+  
   
   
   <button style="position: absolute; top: 1rem; right: 1rem; padding: 1rem; z-index: 100; display: none;" id="closeMenu" class="hide">
@@ -93,128 +102,7 @@
   <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
   <script src="index.js"></script>
   
-  <script>
-    const tabDescription = {
-      "beauxarts" : `
-      <h4>
-        Beaux Arts
-      </h4>
-      
-      <p>
-        A term applied to the style of classically inspired architecture, deriving from the teaching of the École des Beaux-Arts in Paris, which laid emphasis on the architecture of antiquity and that of the Renaissance and 17th- and 18th-century France. It was particularly prevalent in the United States and France in the late 19th and early 20th centuries and was characterized by formal planning overlaid with rich detail that was often overemphasized or overscaled. Victor Laloux's Hôtel de Ville in Paris (1897–1904) and Warren & Wetmore's Grand Central Station in New York (1903–13) are good examples. The style can be found in Manhattan skyscrapers and town houses, Parisian blocks of flats, and British department stores. After 1918 the traditional Beaux-Arts style became obsolete and was superseded by the emerging modern movement.
-      </p>
-      `,
-      "impressionism" : `
-      <h4>
-        Impressionism
-      </h4>
-      <p>
-        A movement in French painting, associated particularly with Monet, Pissarro, Sisley, Degas, and Renoir, characterized by the use of a bright palette, broken brushwork, and an emphasis on depictions of contemporary life and landscape. The term was originally coined as a form of satire by the critic Louis Leroy reviewing the first exhibition of the Société Anonyme des artistes, peintres, sculpteurs, graveurs…which opened on 15 April 1874, at the Parisian studio of the photographer Nadar on the boulevard des Capucines, and is nowadays referred to as the first Impressionist exhibition. Monet's painting Impression: Sunrise 1873 (Musée Marmottan, Paris) was singled out for particular attack, Leroy maintaining that the term ‘impression’ was too personal and should not have been used in a picture title (effet, i.e. an effect of nature, would have been preferable). In fact, ‘impression’ had a complex duality in 19th-century artistic theory, implying on the one hand the reception by the artist of the scene presented to him, on the other the subjective trace of the artist's own nature or temperament in the resulting work of art. The term ‘Impressionist’ rapidly went into widespread usage as a result of the 1874 exhibition and a further seven shows were staged, the last in 1886. There were a number of important contributory factors to the evolution of Impressionism: a growing interest in colour theory and the laws of complementary contrasts; an increasing liking, among landscape painters, for working en plein air; and a growing dissatisfaction with the official Salon exhibitions where many of the young Impressionists experienced frequent rejection. By the time of the final 1886 Impressionist exhibition, many of the participants had begun to experience considerable success, lauded by avant-garde critics and increasingly patronized by enlightened collectors. It was in the 1890s, however, that Impressionism really began to find its international market, especially in America (Britain by contrast was curiously slow to appreciate its merits). Paradoxically, it was also around this time that Impressionism began to be perceived, in certain right-wing religious circles in France, as the art of materialism, concerned only with the everyday. As a style it had become widespread, attracting a plethora of minor and repetitive adherents. Nevertheless, in the course of the 20th century Impressionism can fairly claim to have become the most widely popular of all movements with art lovers and collectors.
-      </p>
-      `,
-      "post-impressionism" : `
-      <h4>
-        Post-Impressionism
-      </h4>
-      
-      <p>
-        As the name implies, a term used to describe developments after and arising from Impressionism. It was first coined by the English painter and critic Roger Fry (1866–1934), who organized the exhibition Manet and the Post-Impressionists held at the Grafton Galleries, London in 1910–11. The imprecision of such an umbrella term, for all its undoubted usefulness, is demonstrated by the wide variety of developments from Impressionism: the quasi-scientific examination of colour by Seurat and the Neo-Impressionists; the structured examination of landscape by Cézanne in which lay the seeds of Cubism; the writhing, expressive brushwork of Van Gogh; the flat colour Symbolism of Gauguin and his followers.
-      </p>
-      `,
-      "fauvism" : `
-      <h4>
-        Fauvism
-      </h4>
-      
-      <p>
-        Derived from the French word fauve, 'wild beast', with which the critic Louis Vauxcelles described Matisse, Vlaminck, Derain, Rouault, and Marquet when he saw the flat patterns and strong colours of their works exhibited in 1905 in the Salon d'Automne in Paris, Fauvism briefly brought together these painters who were seeking, in the wake of Gauguin, Van Gogh, and Cézanne, to explore the expressive potential of colour. In its emphasis on the material, sensuous element of painting, it has been related to the emergence in literature of the poetic movement known as 'le naturisme', which in the closing years of the 19th c. played a major role in the reaction against Symbolism.
-      </p>
-      `,
-      "age" : `
-      <h4>
-        Age
-      </h4>
-      
-      <p>
-        The migration and settlement experience can make foreign-born children vulnerable to stress. Evidence shows that children who arrive in Canada before age 6 have a significantly greater probability of developing mood disorders <cite>(Islam, 2015)</cite> and anxiety disorders during adulthood <cite>(Patterson et al., 2013)</cite> compared to those arriving after age 18 . This could be related to post-migration stress, integration and acculturation factors especially that immigrant youth experience difficulties, such as, fighting intergenerational conflict and, finding their identity in a new land, and poverty <cite>(Islam, 2012;)</cite>
-      </p>
-      `,
-      "pre-" : `
-      <h4>
-        Pre-existing mental health problems
-      </h4>
-      
-      <p>
-        The migration and settlement experience can make foreign-born children vulnerable to stress. Evidence shows that children who arrive in Canada before age 6 have a significantly greater probability of developing mood disorders <cite>(Islam, 2015)</cite> and anxiety disorders during adulthood <cite>(Patterson et al., 2013)</cite> compared to those arriving after age 18 . This could be related to post-migration stress, integration and acculturation factors especially that immigrant youth experience difficulties, such as, fighting intergenerational conflict and, finding their identity in a new land, and poverty <cite>(Islam, 2012)</cite>
-      </p>
-      `,
-      "gender" : `
-      <h4>
-        Gender
-      </h4>
-      
-      <p>
-        Female refugees are more likely to have experienced sexual violence, while male refugees are more likely to have been exposed to other forms of violence, including involvement in the conflict itself as perpetrators or child soldiers. Among immigrant or refugee girls, there is a possibility of female genital mutilation, which can be correlated with psychological issues, such as fear of sexual encounters, dyspareunia, affective disorders, PTSD, anxiety and somatization <cite>(Hearst & Molnar, 2013).</cite>
-      </p>
-      `,
-      "adapt" : `
-      <h4>
-        Adaptation and cultural identity
-      </h4>
-      
-      <p>
-        Adapting to the new society is one of the key tasks for immigrant and refugee children alike. The process of acculturation, in which children's ties to their culture of origin are replaced by cultural practices or beliefs of the receiving country, can be a source of stress <cite>(Ontario Centre of Excellence for Child and Youth Mental Health, 2015).</cite> Studies show, however, that through this process, youth who manage to maintain their own culture and adopt the new culture have the best outcomes. Conversely, those who do not strongly identify with either culture tend to have the worst outcomes. Ethnic identity, then, can act as a protective mechanism. Stronger ethnic identity has also been associated with higher levels of achievement and self-esteem and lower levels of depressive symptoms <cite>(Costigan et al., 2010).</cite>
-      </p>
-      `,
-      "resilience" : `
-      <h4>
-        Resilience and coping skills
-      </h4>
-      
-      <p>
-        Most refugee children overcome multiple stresses and hardships to lead healthy and productive lives. Post-displacement factors that contribute to resilience in refugees include <cite>(Betancourt & Khan, 2008)</cite>:
-      </p>
-      <ul class="list blue">
-        <li>
-          individual coping strategies
-        </li>
-        <li>
-          caregiver relationships and social support
-        </li>
-        <li>
-          caregiver mental health
-        </li>
-        <li>
-          access to schools
-        </li>
-        <li>
-          affiliations with religious institutions
-        </li>
-        <li>
-          cultural values and practices
-        </li>
-      </ul>
-      `,
-      "language" : `
-      <h4>
-        Language proficiency
-      </h4>
-      
-      <p>
-        Language acquisition and fluency may serve as a protective factor for children. Proficiency in both a mother tongue and the official language of the host society may contribute to positive interpersonal outcomes. Settlement workers should encourage families to speak their original language at home as children's fluency in the original language can be protective.
-      </p>
-      `,
-      "physical" : `
-      <h4>
-        Physical health
-      </h4>
-      
-      <p>
-        Medical problems acquired in pre-migration or migration can affect children's post-migration psychosocial adjustment and increase the risk of mental health problems <cite>(APA, 2010; UNHCR, 2001).</cite> Refugee children are especially vulnerable to poor physical health. Exposure to armed conflict and organized violence, for example, increases children's risk of physical injury. During flight and displacement, refugee children can also become victims of malnutrition and infectious diseases. In addition, maternal malnutrition and health problems can lead to a higher risk of birth complications, and inadequate nutrition for infants can lead to developmental delays.
-      </p>
-      `,
-    };  
-  </script>
+
   
   
 </body>
