@@ -21,6 +21,9 @@ header > div,
 .inv {
   max-width: none;
 }
+.inv a {
+  color: #ffefaa;
+}
 
 html {
   font-family: 'barlow', 'helvetica', 'arial';
@@ -623,6 +626,12 @@ blockquote > div,
   color: #fff;
   background: #303030;
 }
+
+.inv .flowButton:hover,
+.inv .flowButton:focus {
+  color: #303030;
+  background: #fff;
+}
 .toc button {
   width: 100%;
   padding: 0 2rem;
@@ -933,7 +942,7 @@ iframe {
   top: 0;
   left: 0;
   background: #ffffff;
-  animation: inOut 4s alternate-reverse infinite;
+  animation: inOut 8s alternate-reverse infinite;
 }
 
 .inv .hoverImg {

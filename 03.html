@@ -56,17 +56,17 @@
   
   <!-- agenda -->
   <header class="flex" style="background-image: url('./assets/diagonal.png'); background-size: 40%;">
-      <div class="pad">
-        <h5>
-          Lecture recording (first half)
-        </h5>
-        <iframe frameborder="0" width="400" src="https://drive.google.com/file/d/1nEDkBzVvrJicNEyxE7oKPO34FPv4D0R0/preview?usp=share_link" style="height: 4rem;"></iframe>
-        <h5>
-          Lecture recording (second half - starts late, sorry!)
-        </h5>
-        <iframe frameborder="0" width="400" src="https://drive.google.com/file/d/1sN8ANYYGj0aOM29l_caovwZAUQIy0l4x/preview?usp=share_link" style="height: 4rem;"></iframe>
-      </div>
-
+    <div class="pad">
+      <h5>
+        Lecture recording (first half)
+      </h5>
+      <iframe frameborder="0" width="400" src="https://drive.google.com/file/d/1nEDkBzVvrJicNEyxE7oKPO34FPv4D0R0/preview?usp=share_link" style="height: 4rem;"></iframe>
+      <h5>
+        Lecture recording (second half - starts late, sorry!)
+      </h5>
+      <iframe frameborder="0" width="400" src="https://drive.google.com/file/d/1sN8ANYYGj0aOM29l_caovwZAUQIy0l4x/preview?usp=share_link" style="height: 4rem;"></iframe>
+    </div>
+    
   </header>
   
   <section class="flex">
@@ -198,15 +198,14 @@
         Some of the gallerists, dealers, and writers that made Cubism a <em>thing</em>:
       </h5>
       
+      <p>
+        Click on names to see their biography below
+      </p>
+      
       <div>
         <ul class="grid imgBox">
-          <!-- <li>
-            <p>
-              Andre Salmon
-            </p>
-          </li> -->
           <li style="justify-content: flex-start; position: relative;">
-            <h5>
+            <h5 class="inv flowButton flex" id="dhk">
               Daniel-Henry Kahnweiler
             </h5>
             <div style="position: relative;">
@@ -221,7 +220,7 @@
           </li>
           
           <li>
-            <h5>
+            <h5 class="inv flowButton flex" id="av">
               Ambroise Vollard
             </h5>
             <div style="position: relative;">
@@ -235,7 +234,7 @@
             </div>
           </li>
           <li>
-            <h5>
+            <h5 class="inv flowButton flex" id="ga">
               Guillaume Apollinaire
             </h5>
             <div style="position: relative;">
@@ -252,8 +251,8 @@
         <ul class="grid imgBox" style="max-width: 768px; margin: auto;">
           
           <li>
-            <h5>
-              Andre Salmon
+            <h5 class="inv flowButton flex" id="as">
+              André Salmon
             </h5>
             <div style="position: relative;">
               <img src="./assets/03/Portrait of Salmon by Josette Bournet, c1947.jpg" alt="">
@@ -264,9 +263,10 @@
                 <img src="./assets/03/salmon.jpg" alt="Andre Salmon">
               </div>
             </div>
+            
           </li>
           <li style="max-width: 300px;">
-            <h5>
+            <h5 class="inv flowButton flex" id="mr">
               Maurice Raynal
             </h5>
             <div style="position: relative;">
@@ -281,6 +281,13 @@
           </li>
         </ul>
       </div>
+      
+      <span id="mb"></span>
+      <div class="pad mapBox igBox inv" id="mb">
+        <!-- populated dynamically -->
+      </div>
+      
+      
     </section>
     <section class="flexCol">
       <h4>
@@ -351,24 +358,24 @@
         <h3>
           Group activity!
         </h3>
-      <p>
-        1. Break into groups with surrounding classmates (join with as many as you'd like; if you want to do this alone, that's ok too!)
-      </p>
-      <p>
-        2. Choose one of the paintings below
-      </p>
-      <p>
-        3. Discuss! What's going on in this painting: What can you (or can't you) identify? How are figures portrayed? What stylistic techniques are used, and what effect do they create for the viewer? 
-      </p>
-      <p>
-        4. Log your observations on the discussion board forum thread called Jan 24 (<a href="https://q.utoronto.ca/courses/288372/discussion_topics/2059185" target="_blank" style="color: #ffefaa;">
-          link
-        </a>) and include everyone's name to be acknowledged for attendance + participation credit.  
-      </p>
-    </div>
-    
-        
-        
+        <p>
+          1. Break into groups with surrounding classmates (join with as many as you'd like; if you want to do this alone, that's ok too!)
+        </p>
+        <p>
+          2. Choose one of the paintings below
+        </p>
+        <p>
+          3. Discuss! What's going on in this painting: What can you (or can't you) identify? How are figures portrayed? What stylistic techniques are used, and what effect do they create for the viewer? 
+        </p>
+        <p>
+          4. Log your observations on the discussion board forum thread called Jan 24 (<a href="https://q.utoronto.ca/courses/288372/discussion_topics/2059185" target="_blank" style="color: #ffefaa;">
+            link
+          </a>) and include everyone's name to be acknowledged for attendance + participation credit.  
+        </p>
+      </div>
+      
+      
+      
       
       <ul class="gridCols imgBox">
         <li style="max-width: 470px;">
@@ -423,7 +430,7 @@
         <img src="./assets/03/Braque - Violin and Palette.jpg" style="margin: 1rem;">
         <p>Georges Braque - Violin and Palette - 1909-11</p>
       </div>
-
+      
       <div class="img" style="margin: 12rem 0 4rem 0;">
         <img src="./assets/03/Juan Gris - Portrait of Pablo Picasso - 1912.jpg">
         <p>Juan Gris - Portrait of Pablo Picasso - 1912</p>
@@ -507,11 +514,11 @@
       </ul>
       
       <div class="igBox">
-
+        
         <h5>
           Of course, women artists were active in these circles, though without the same publicity and support as their male peers. 
         </h5>
-
+        
         <ul class="gridCols imgBox">
           <li>
             <img src="./assets/03/Marie Laurencin - Young Girls - 1910-11.jpg" alt="">
@@ -561,8 +568,8 @@
       </div>
     </section>
     
-        
-
+    
+    
     
     
     
@@ -573,15 +580,128 @@
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="index.js"></script>
     
-
-      <!-- <a href="04.html"><button class="pad">
-        Next Class
-      </button></a> -->
-      
+    
+    <!-- <a href="04.html"><button class="pad">
+      Next Class
+    </button></a> -->
+    
     <a href="02.html"><button class="pad">
       Previous Class
     </button></a>
-  </body>
-  </html>
-  
-  
+    
+    <script>
+      $('.flowButton').on("click", function() {
+        const factor = $(this).attr("id");
+        $(".mapBox").empty();
+        location.href="#mb"
+        for (let name in tabDescription) {
+          if  (factor === name) {
+            $(".mapBox").append((tabDescription[name]));
+            $(".mapBox").slideDown(400);
+          }
+        }
+      });
+      
+      
+      
+      
+      const tabDescription = {
+        "as" : `
+        <h4>
+          André Salmon
+        </h4>
+        
+        <p>
+          Poet, novelist, and art critic. A very Parisian figure, Salmon is best remembered as an impresario and chronicler of the arts who did much to promote the 'vie d'artiste' in Montparnasse and the merits of artists such as Picasso and Modigliani who were among his familiars (see his Souvenirs sans fin, 3 vols., 1955–61). An eclectic and enthusiastic critic, he launched the review Le Festin d'Ésope with Apollinaire and Jacob in 1903. His intensely lyrical poetry, always tinged with nostalgia but often humorous and linguistically playful, is at its best in Créances (1926), Carreaux (1928), and Les Étoiles dans l'encrier (1952). Of his novels, the best is probably Le Manuscrit trouvé dans un chapeau (1919).
+        </p>
+        <cite>
+          Sheringham, Michael. "Salmon, André." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780198661252.001.0001/acref-9780198661252-e-4213." target="_blank"> The New Oxford Companion to Literature in French. : Oxford University Press, 1995.</a>.
+        </cite>
+        `,
+        "ga" : `
+        <h4>
+          Guillaume Apollinaire
+        </h4>
+        <p>
+          French poet and art critic. Apollinaire was 'the most influential art critic writing in France during the decade before the outbreak of war in 1914…a cardinal figure in creating the artistic climate of Paris early in this century—a climate in which anything and everything was thought possible' (John Golding, Visions of the Modern, 1994). He earned his living mainly with journalism and was one of the prototypes of the modern critic, his writing containing much that is superficial and gossipy. His importance stems not so much from the quality of his writing as from his brilliance as a propagandist on behalf of those artists he most admired. In particular he championed Picasso (his first substantial articles, in 1905, were on him) and later the Cubists in general (including the Orphists, whose name he coined). Among the other artists whose reputations he either established or consolidated were Chagall, de Chirico, Derain, Matisse, and Henri Rousseau. He was also influential on Dada (his friend Marcel Duchamp's interest in visual punning was partly inspired by Apollinaire's love of jest and linguistic acrobatics) and on Surrealism (he coined the term in 1917 and his suggestion that artists should explore 'interior universes' stimulated André Breton, who dedicated the first Surrealist manifesto to his memory). Apollinaire was wounded in the head serving in the French army in 1916; weakened by this, he died of influenza two years later.
+        </p>
+        <cite>
+          Chilvers, Ian. "Apollinaire, Guillaume." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780199532940.001.0001/acref-9780199532940-e-98" target="_blank"> The Oxford Dictionary of Art and Artists: Oxford University Press, 2009. </a>.
+        </cite>
+        `,
+        "av" : `
+        <h4>
+          Ambroise Vollard
+        </h4>
+        
+        <p>
+          French dealer, connoisseur, publisher, and writer, one of the most important champions of avant-garde art in the early 20th century. In 1893 he opened a gallery in Paris and in 1895 he gave the first important exhibition of Cézanne’s work. Other landmark events included the first one-man exhibitions of Picasso (1901) and Matisse (1904). His clientele included some of the leading collectors of the day, among them Albert C. Barnes and Gertrude and Leo Stein. As well as buying and selling paintings, Vollard played an important role as a publisher by encouraging his artists to work as printmakers. He commissioned them to illustrate books (literary classics as well as contemporary works) and also issued independent portfolios of prints, notably Picasso’s Vollard Suite, consisting of 100 etchings on various themes made between 1930 and 1937. His portrait was painted many times, among others by Bonnard, Cézanne, Picasso, Renoir, and Rouault. Vollard’s writings included books on Cézanne and Degas and the autobiographical Recollections of a Picture Dealer (1936); a slightly expanded French version, Souvenirs d’un marchand de tableaux, appeared in 1937.
+        </p>
+        <cite>
+          "Vollard, Ambroise." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780198604761.001.0001/acref-9780198604761-e-3672" target="_blank">The Oxford Dictionary of Art, edited by Chilvers, Ian. : Oxford University Press, 2004.</a>.
+        </cite>
+        `,
+        "dhk" : `
+        <h4>
+          Daniel-Henry Kahnweiler
+        </h4>
+        
+        <p>
+          German-born art dealer, publisher, and writer, who became a French citizen in 1937. In 1907 he opened a gallery in Paris. His first purchases were of Fauvist works, but he is best known as the friend and promoter of the Cubists. In 1912 Braque and Picasso signed contracts giving Kahnweiler exclusive rights to buy their entire outputs. He was also a friend and supporter of Juan Gris, of whom he wrote a standard biography (1947). As a publisher he brought out numerous books illustrated by his artist friends. In 1961 he published an autobiography, Mes galeries et mes peintres; in the introduction to the English translation, My Galleries and Painters (1971), John Russell wrote: ‘Where the old-style dealers did their artists a favour by inviting them to luncheon, Kahnweiler lived with Picasso, Braque, Gris, Derain, and Vlaminck on a day-to-day, hour-to-hour basis. The important thing was not so much that they should sell as that they should be free to get on with their work; and Kahnweiler, by making this possible, helped to bring into being what now seems to us that last great flowering of French art.’
+        </p>
+        <cite>
+          "Kahnweiler, Daniel-Henri." In <a href="https://www-oxfordreference-com.myaccess.library.utoronto.ca/view/10.1093/acref/9780198604761.001.0001/acref-9780198604761-e-1836" target="_blank">The Oxford Dictionary of Art, edited by Chilvers, Ian. : Oxford University Press, 2004.</a>.
+        </cite>
+        `,
+        "mr" : `
+        <h4>
+          Maurice Reynal
+        </h4>
+        
+        <p>
+          Maurice Raynal (3 February 1884, Paris – 18 September 1954, Suresnes) was a French art critic and an ardent propagandist of cubism.
+        </p>
+        <ul class="list">
+          <h4>
+            Some publications:
+            </h4>
+          <li>
+            Essai de Définition de la Peinture Cubiste, Bulletin de la Section d'Or, Paris, 9 October 1912
+          </li>
+          <li>
+            Quelques Intentions du Cubisme, I'Effort Moderne, 1919
+          </li>
+          <li>
+            Picasso, 1921[1]
+          </li>
+          <li>
+            Juan Gris et la métaphore plastique, Feuilles Libres, 1923
+          </li>
+          <li>
+            Quelques Intentions du Cubisme, Bulletin de I'Effort Moderne, nos. 1, 2, 3, January-March, 1924
+          </li>
+          <li>
+Anthologie de la Peinture en France de 1906 a nos jours, Paris, Editions Montaigne, 1927
+          </li>
+          <li>
+Modern French Painters, Brentano's, New York, 1928
+          </li>
+          <li>
+          Histoire de la peinture moderne de Baudelaire à Bonnard, Skira, Geneva, 1949
+          </li>
+          <li>
+          Modern Painting: Painting, Color, History. (1953). Editions D'Art Albert Skira, Geneva, 339 pp. [Translated to English by Stuart Gilbert]
+          </li>
+          <ul>
+          <cite>
+            "Maurice Raynal" <a href="wikipedia.org" target="_blank">https://en.wikipedia.org/wiki/Maurice_Raynal</a>.
+          </cite>
+          `,
+          
+        };  
+      </script>
+      
+    </body>
+    </html>
+    
+    
