@@ -819,11 +819,11 @@ blockquote > div,
     filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(180deg);
+    filter: hue-rotate(360deg);
   }
 }
 .colourShift {
-  animation: colourShift 5s alternate-reverse infinite;
+  animation: colourShift 8s linear infinite;
 }
 
 @keyframes fade {
