@@ -100,10 +100,10 @@ const menu = `
     <li><a href="03.html">
     3
     </a></li>
-    <li><a href="#">
+    <li><a href="04.html">
     4
     </a></li>
-    <li><a href="#">
+    <li><a href="05.html">
     5
     </a></li>
     <li><a href="#">
