@@ -106,7 +106,7 @@ const menu = `
     <li><a href="05.html">
     5
     </a></li>
-    <li><a href="#">
+    <li><a href="06.html">
     6
     </a></li>
     <li><a href="#">
