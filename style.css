@@ -28,7 +28,7 @@ header > div,
 html {
   font-family: 'barlow', 'helvetica', 'arial';
   font-size: 16px;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 400;
   color: #303030;
   scroll-behavior: smooth;
