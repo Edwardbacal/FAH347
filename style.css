@@ -29,6 +29,7 @@ html {
   font-family: 'barlow', 'helvetica', 'arial';
   font-size: 16px;
   /* font-size: 20px; */
+  /* font-size: 24px; */
   font-weight: 400;
   color: #303030;
   scroll-behavior: smooth;
@@ -229,7 +230,7 @@ ol li h3 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   place-items: center;
-  width: 100%;
+
 }
 .pads li {
   padding: 2rem;
@@ -243,6 +244,7 @@ ol li h3 {
 .gridCols,
 .iconGridCols {
   grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
   gap: 2.5rem;
   margin: 2.5rem auto;
 }
