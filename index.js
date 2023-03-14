@@ -115,7 +115,7 @@ const menu = `
     <li><a href="08.html">
     8
     </a></li>
-    <li><a href="#">
+    <li><a href="09.html">
     9
     </a></li>
     <li><a href="#">
@@ -139,6 +139,10 @@ $('.flipCard').on("click", function() {
 
 $('.TFbutton').on("click", function() {
   $(this).fadeOut();
+  $(this).next(".displayNone").slideToggle();
+});
+
+$('.transcriptButton').on("click", function() {
   $(this).next(".displayNone").slideToggle();
 });
 
