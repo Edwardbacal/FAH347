@@ -118,13 +118,13 @@ const menu = `
     <li><a href="09.html">
     9
     </a></li>
-    <li><a href="#">
+    <li><a href="botar.html">
     10
     </a></li>
-    <li><a href="botar.html">
+    <li><a href="11.html">
     11
     </a></li>
-    <li><a href="#">
+    <li><a href="12.html">
     12
     </a></li>
     </ol>

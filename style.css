@@ -974,6 +974,7 @@ iframe {
   color: #303030;
   background: transparent !important;
   filter: none !important;
+  margin: 1rem 0 !important;
 }
 
 
