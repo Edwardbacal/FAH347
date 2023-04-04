@@ -138,7 +138,7 @@ $('.flipCard').on("click", function() {
 });
 
 $('.TFbutton').on("click", function() {
-  $(this).fadeOut();
+  // $(this).fadeOut();
   $(this).next(".displayNone").slideToggle();
 });
 
