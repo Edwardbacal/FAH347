@@ -65,6 +65,13 @@ const menu = `
     </a>
     </li>
     <li class="padB">
+    <a class="closer" href="maxe.html">
+    <h4>
+    Exam
+    </h4>
+    </a>
+    </li>
+    <li class="padB">
     <a class="closer" href="index.html#details">
     <h4>
     Details

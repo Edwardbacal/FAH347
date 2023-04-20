@@ -229,7 +229,6 @@ ol li h3 {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   place-items: center;
-
 }
 .pads li {
   padding: 2rem;
